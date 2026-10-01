@@ -1,0 +1,430 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.animales.org/mic/pasto#"
+     xml:base="http://www.animales.org/mic/pasto"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:pasto="http://www.animales.org/mic/pasto#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:care="https://schema.org/VeterinaryCare">
+    <owl:Ontology rdf:about="http://www.animales.org/mic/pasto">
+        <owl:priorVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0.1</owl:priorVersion>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Primera versión de la ontología de animales.</owl:versionInfo>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Agrupamiento de animales según el enunciado del primer taller de web semántica.</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.animales.org/mic/pasto#come_a -->
+
+    <owl:ObjectProperty rdf:about="http://www.animales.org/mic/pasto#come_a">
+        <owl:inverseOf rdf:resource="http://www.animales.org/mic/pasto#es_comido_por"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.animales.org/mic/pasto#es_comido_por -->
+
+    <owl:ObjectProperty rdf:about="http://www.animales.org/mic/pasto#es_comido_por"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.animales.org/mic/pasto#medida -->
+
+    <owl:DatatypeProperty rdf:about="http://www.animales.org/mic/pasto#medida">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.animales.org/mic/pasto#nombre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.animales.org/mic/pasto#nombre"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.animales.org/mic/pasto#aguila -->
+
+    <owl:Class rdf:about="http://www.animales.org/mic/pasto#aguila">
+        <owl:equivalentClass rdf:resource="http://www.animales.org/mic/pasto#pajaro"/>
+        <rdfs:subClassOf rdf:resource="http://www.animales.org/mic/pasto#aves"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.animales.org/mic/pasto#aves -->
+
+    <owl:Class rdf:about="http://www.animales.org/mic/pasto#aves">
+        <rdfs:subClassOf rdf:resource="http://www.animales.org/mic/pasto#zona_A"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.animales.org/mic/pasto#ballena -->
+
+    <owl:Class rdf:about="http://www.animales.org/mic/pasto#ballena">
+        <rdfs:subClassOf rdf:resource="http://www.animales.org/mic/pasto#marinos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.animales.org/mic/pasto#besugo -->
+
+    <owl:Class rdf:about="http://www.animales.org/mic/pasto#besugo">
+        <rdfs:subClassOf rdf:resource="http://www.animales.org/mic/pasto#marinos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.animales.org/mic/pasto#buitre -->
+
+    <owl:Class rdf:about="http://www.animales.org/mic/pasto#buitre">
+        <owl:equivalentClass rdf:resource="http://www.animales.org/mic/pasto#pajaro"/>
+        <rdfs:subClassOf rdf:resource="http://www.animales.org/mic/pasto#aves"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.animales.org/mic/pasto#canario -->
+
+    <owl:Class rdf:about="http://www.animales.org/mic/pasto#canario">
+        <rdfs:subClassOf rdf:resource="http://www.animales.org/mic/pasto#domesticos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.animales.org/mic/pasto#cocodrilo -->
+
+    <owl:Class rdf:about="http://www.animales.org/mic/pasto#cocodrilo">
+        <rdfs:subClassOf rdf:resource="http://www.animales.org/mic/pasto#general"/>
+        <rdfs:subClassOf rdf:resource="http://www.animales.org/mic/pasto#reptiles"/>
+        <rdfs:subClassOf rdf:resource="http://www.animales.org/mic/pasto#zoologico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.animales.org/mic/pasto#delfin -->
+
+    <owl:Class rdf:about="http://www.animales.org/mic/pasto#delfin">
+        <rdfs:subClassOf rdf:resource="http://www.animales.org/mic/pasto#marinos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.animales.org/mic/pasto#domesticos -->
+
+    <owl:Class rdf:about="http://www.animales.org/mic/pasto#domesticos">
+        <rdfs:subClassOf rdf:resource="http://www.animales.org/mic/pasto#zona_A"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.animales.org/mic/pasto#gato -->
+
+    <owl:Class rdf:about="http://www.animales.org/mic/pasto#gato">
+        <rdfs:subClassOf rdf:resource="http://www.animales.org/mic/pasto#domesticos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.animales.org/mic/pasto#general -->
+
+    <owl:Class rdf:about="http://www.animales.org/mic/pasto#general"/>
+    
+
+
+    <!-- http://www.animales.org/mic/pasto#hamster -->
+
+    <owl:Class rdf:about="http://www.animales.org/mic/pasto#hamster">
+        <rdfs:subClassOf rdf:resource="http://www.animales.org/mic/pasto#domesticos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.animales.org/mic/pasto#iguana -->
+
+    <owl:Class rdf:about="http://www.animales.org/mic/pasto#iguana">
+        <rdfs:subClassOf rdf:resource="http://www.animales.org/mic/pasto#reptiles"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.animales.org/mic/pasto#jirafa -->
+
+    <owl:Class rdf:about="http://www.animales.org/mic/pasto#jirafa">
+        <rdfs:subClassOf rdf:resource="http://www.animales.org/mic/pasto#zoologico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.animales.org/mic/pasto#lagartija -->
+
+    <owl:Class rdf:about="http://www.animales.org/mic/pasto#lagartija">
+        <rdfs:subClassOf rdf:resource="http://www.animales.org/mic/pasto#reptiles"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.animales.org/mic/pasto#lagarto -->
+
+    <owl:Class rdf:about="http://www.animales.org/mic/pasto#lagarto">
+        <rdfs:subClassOf rdf:resource="http://www.animales.org/mic/pasto#reptiles"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.animales.org/mic/pasto#leon -->
+
+    <owl:Class rdf:about="http://www.animales.org/mic/pasto#leon">
+        <rdfs:subClassOf rdf:resource="http://www.animales.org/mic/pasto#zoologico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.animales.org/mic/pasto#marinos -->
+
+    <owl:Class rdf:about="http://www.animales.org/mic/pasto#marinos">
+        <rdfs:subClassOf rdf:resource="http://www.animales.org/mic/pasto#zona_A"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.animales.org/mic/pasto#mono -->
+
+    <owl:Class rdf:about="http://www.animales.org/mic/pasto#mono">
+        <rdfs:subClassOf rdf:resource="http://www.animales.org/mic/pasto#zoologico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.animales.org/mic/pasto#osos -->
+
+    <owl:Class rdf:about="http://www.animales.org/mic/pasto#osos">
+        <rdfs:subClassOf rdf:resource="http://www.animales.org/mic/pasto#zona_B"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.animales.org/mic/pasto#pajaro -->
+
+    <owl:Class rdf:about="http://www.animales.org/mic/pasto#pajaro">
+        <owl:equivalentClass rdf:resource="http://www.animales.org/mic/pasto#papagayo"/>
+        <rdfs:subClassOf rdf:resource="http://www.animales.org/mic/pasto#aves"/>
+        <rdfs:subClassOf rdf:resource="http://www.animales.org/mic/pasto#domesticos"/>
+        <rdfs:subClassOf rdf:resource="http://www.animales.org/mic/pasto#general"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.animales.org/mic/pasto#panda -->
+
+    <owl:Class rdf:about="http://www.animales.org/mic/pasto#panda">
+        <rdfs:subClassOf rdf:resource="http://www.animales.org/mic/pasto#osos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.animales.org/mic/pasto#papagayo -->
+
+    <owl:Class rdf:about="http://www.animales.org/mic/pasto#papagayo">
+        <rdfs:subClassOf rdf:resource="http://www.animales.org/mic/pasto#aves"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.animales.org/mic/pasto#pardo -->
+
+    <owl:Class rdf:about="http://www.animales.org/mic/pasto#pardo">
+        <rdfs:subClassOf rdf:resource="http://www.animales.org/mic/pasto#osos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.animales.org/mic/pasto#perro -->
+
+    <owl:Class rdf:about="http://www.animales.org/mic/pasto#perro">
+        <rdfs:subClassOf rdf:resource="http://www.animales.org/mic/pasto#domesticos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.animales.org/mic/pasto#pez -->
+
+    <owl:Class rdf:about="http://www.animales.org/mic/pasto#pez">
+        <rdfs:subClassOf rdf:resource="http://www.animales.org/mic/pasto#domesticos"/>
+        <rdfs:subClassOf rdf:resource="http://www.animales.org/mic/pasto#general"/>
+        <rdfs:subClassOf rdf:resource="http://www.animales.org/mic/pasto#marinos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.animales.org/mic/pasto#pinguino -->
+
+    <owl:Class rdf:about="http://www.animales.org/mic/pasto#pinguino">
+        <rdfs:subClassOf rdf:resource="http://www.animales.org/mic/pasto#aves"/>
+        <rdfs:subClassOf rdf:resource="http://www.animales.org/mic/pasto#general"/>
+        <rdfs:subClassOf rdf:resource="http://www.animales.org/mic/pasto#marinos"/>
+        <rdfs:subClassOf rdf:resource="http://www.animales.org/mic/pasto#zoologico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.animales.org/mic/pasto#polar -->
+
+    <owl:Class rdf:about="http://www.animales.org/mic/pasto#polar">
+        <rdfs:subClassOf rdf:resource="http://www.animales.org/mic/pasto#osos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.animales.org/mic/pasto#reptiles -->
+
+    <owl:Class rdf:about="http://www.animales.org/mic/pasto#reptiles">
+        <rdfs:subClassOf rdf:resource="http://www.animales.org/mic/pasto#zona_B"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.animales.org/mic/pasto#serpiente -->
+
+    <owl:Class rdf:about="http://www.animales.org/mic/pasto#serpiente">
+        <rdfs:subClassOf rdf:resource="http://www.animales.org/mic/pasto#reptiles"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.animales.org/mic/pasto#tiburon -->
+
+    <owl:Class rdf:about="http://www.animales.org/mic/pasto#tiburon">
+        <rdfs:subClassOf rdf:resource="http://www.animales.org/mic/pasto#marinos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.animales.org/mic/pasto#tigre -->
+
+    <owl:Class rdf:about="http://www.animales.org/mic/pasto#tigre">
+        <rdfs:subClassOf rdf:resource="http://www.animales.org/mic/pasto#zoologico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.animales.org/mic/pasto#zona_A -->
+
+    <owl:Class rdf:about="http://www.animales.org/mic/pasto#zona_A"/>
+    
+
+
+    <!-- http://www.animales.org/mic/pasto#zona_B -->
+
+    <owl:Class rdf:about="http://www.animales.org/mic/pasto#zona_B"/>
+    
+
+
+    <!-- http://www.animales.org/mic/pasto#zoologico -->
+
+    <owl:Class rdf:about="http://www.animales.org/mic/pasto#zoologico">
+        <rdfs:subClassOf rdf:resource="http://www.animales.org/mic/pasto#zona_B"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.animales.org/mic/pasto#care:member -->
+
+    <owl:Class rdf:about="http://www.animales.org/mic/pasto#care:member">
+        <rdfs:subClassOf rdf:resource="http://www.animales.org/mic/pasto#general"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.animales.org/mic/pasto#miTiburon -->
+
+    <owl:NamedIndividual rdf:about="http://www.animales.org/mic/pasto#miTiburon">
+        <rdf:type rdf:resource="http://www.animales.org/mic/pasto#tiburon"/>
+        <come_a rdf:resource="http://www.animales.org/mic/pasto#toby"/>
+        <medida rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</medida>
+        <nombre>joselito</nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.animales.org/mic/pasto#toby -->
+
+    <owl:NamedIndividual rdf:about="http://www.animales.org/mic/pasto#toby">
+        <rdf:type rdf:resource="http://www.animales.org/mic/pasto#perro"/>
+        <es_comido_por rdf:resource="http://www.animales.org/mic/pasto#miTiburon"/>
+        <medida rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</medida>
+        <nombre>toby</nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.animales.org/mic/pasto#aves"/>
+            <rdf:Description rdf:about="http://www.animales.org/mic/pasto#domesticos"/>
+            <rdf:Description rdf:about="http://www.animales.org/mic/pasto#marinos"/>
+            <rdf:Description rdf:about="http://www.animales.org/mic/pasto#osos"/>
+            <rdf:Description rdf:about="http://www.animales.org/mic/pasto#reptiles"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
